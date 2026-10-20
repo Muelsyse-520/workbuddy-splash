@@ -1,15 +1,30 @@
-# WorkBuddy 开屏特效 · Splash
+# 阿米娅-星海寻梦
 
-> 深蓝海洋开场 → 蓝色光刃自上而下擦除（PPT 翻页式）→ 启屏页
+> WorkBuddy 风格开屏特效：深蓝海洋开场 → 蓝色光刃自上而下擦除（PPT 翻页式）→ 启屏页。
 
-一个纯前端渲染的 Electron 开屏动画，可直接用作桌面应用的启动画面。
+一个纯前端渲染的 Electron 开屏动画，可作为桌面应用的启动画面。
 
 - **无网络依赖**：所有图形在本地渲染，不请求任何外部接口。
 - **PPT 翻页式转场**：一条 2px 蓝色光刃自上而下划过，线上方是启屏页、下方是海洋，扫到哪揭到哪；沿线溅出蓝色水晶碎屑。
 - **启屏页**：流星 / 星野 / 钻石星辰 Logo。
 - **开箱即用**：`npm install && npm start`，或直接用「便携版」双击运行。
 
-## 效果预览
+## 💡 懒人一键安装（把这整段复制给 WorkBuddy）
+
+> 帮我装一下「阿米娅-星海寻梦」开屏特效（Electron 小工具）：
+> 1) 打开 https://github.com/Muelsyse-520/workbuddy-splash ，在 Releases 里下载 `v1.0.0` 的 `workbuddy-splash-portable-win64.zip`；
+> 2) 解压到 `F:\AI-Data\apps\amiya-starsea`（没有就新建）；
+> 3) 打开解压目录里的 `resources\app\config.json`，把 `"target"` 改成 `"F:\\WorkBuddy\\WorkBuddy.exe"`；
+> 4) 先备份桌面和开始菜单里的 WorkBuddy 快捷方式，再把它们的目标改成解压出来的 `WorkBuddy Splash.exe`（起始位置填解压目录）；
+> 5) 装好后告诉我怎么验证：要**完全退出 WorkBuddy（含托盘）**，再从桌面或开始菜单启动，才会看到开屏。
+
+复制上面这段发给 WorkBuddy 即可，它会替你下载、解压、改快捷方式。
+
+## 🖼 效果预览
+
+![开场：深蓝海洋 · 阿米娅](docs/preview-ocean.png)
+
+![启屏页：荧光线稿 · 灵感有回响](docs/preview-landing.png)
 
 - **不装任何环境直接看**：打开 `preview/full-playthrough.html`，浏览器会自动完整播放。
 - **桌面版**：见下方「快速开始 / 便携版」。
