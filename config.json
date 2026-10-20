@@ -1,0 +1,7 @@
+{
+  "fullscreen": true,
+  "width": 1280,
+  "height": 720,
+  "target": "",
+  "maxWaitMs": 60000
+}

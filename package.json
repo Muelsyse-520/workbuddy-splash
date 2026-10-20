@@ -1,0 +1,23 @@
+{
+  "name": "workbuddy-splash",
+  "version": "1.0.0",
+  "private": false,
+  "description": "WorkBuddy 风格开屏特效（Electron）：深蓝海洋开场 → 蓝色光刃擦除 → 启屏页",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "preview": "electron . --windowed"
+  },
+  "keywords": [
+    "splash",
+    "splash-screen",
+    "electron",
+    "startup",
+    "ui",
+    "opening"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^44.0.0"
+  }
+}
