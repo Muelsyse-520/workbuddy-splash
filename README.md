@@ -13,8 +13,8 @@
 
 > 帮我装一下「阿米娅-星海寻梦」开屏特效（Electron 小工具）：
 > 1) 打开 https://github.com/Muelsyse-520/workbuddy-splash ，在 Releases 里下载 `v1.0.0` 的 `workbuddy-splash-portable-win64.zip`；
-> 2) 解压到 `F:\AI-Data\apps\amiya-starsea`（没有就新建）；
-> 3) 打开解压目录里的 `resources\app\config.json`，把 `"target"` 改成 `"F:\\WorkBuddy\\WorkBuddy.exe"`；
+> 2) 解压到一个**非系统盘**的目录（例如 `D:\Apps\amiya-starsea`；**不要放 C 盘**，帮我选一个除 C 盘外的常用盘）；
+> 3) 打开解压目录里的 `resources\app\config.json`，把 `"target"` 改成**我电脑上 WorkBuddy.exe 的完整路径**（如果你不知道在哪，帮我从桌面的 WorkBuddy 快捷方式里查出来再填）；
 > 4) 先备份桌面和开始菜单里的 WorkBuddy 快捷方式，再把它们的目标改成解压出来的 `WorkBuddy Splash.exe`（起始位置填解压目录）；
 > 5) 装好后告诉我怎么验证：要**完全退出 WorkBuddy（含托盘）**，再从桌面或开始菜单启动，才会看到开屏。
 
@@ -26,7 +26,7 @@
 
 ![启屏页：荧光线稿 · 灵感有回响](docs/preview-landing.png)
 
-- **在线直接看（推荐）**：https://Muelsyse-520.github.io/workbuddy-splash/ —— 浏览器打开即自动完整播放，无需安装任何东西。
+- **在线直接看（推荐）**：https://muelsyse-520.github.io/workbuddy-splash/ —— 浏览器打开即自动完整播放，无需安装任何东西。
 - **本地看**：下载源码后双击 `preview/full-playthrough.html`。（注意：在 GitHub 网页里直接点开 `.html` 只会显示源码，不会播放，所以用上面的在线地址。）
 - **桌面版**：见下方「快速开始 / 便携版」。
 
@@ -63,7 +63,7 @@ npm start
 | 字段 | 说明 |
 |---|---|
 | `fullscreen` | `true` 全屏无边框；`false` 时使用 `width` / `height` |
-| `target` | 可选：首帧时并行拉起的程序路径（例如 `"C:\\Apps\\Foo\\Foo.exe"`）；留空则开屏结束后直接退出 |
+| `target` | 可选：首帧时并行拉起的程序路径（例如 `"D:\\Apps\\Foo\\Foo.exe"`，请用非系统盘）；留空则开屏结束后直接退出 |
 | `maxWaitMs` | 兜底最长存活时间，防止卡住不退出 |
 
 ## 自定义
@@ -87,6 +87,9 @@ renderer/splash-html/
   assets/hero-line.jpg   主视觉
 preview/
   full-playthrough.html  浏览器直开版（自播放，无需安装）
+docs/
+  index.html             在线演示页（GitHub Pages）
+  assets/hero-line.jpg
 ```
 
 ## 分享 / 发布（拿到下载地址）
@@ -105,7 +108,7 @@ preview/
 ## 常见问题
 
 - **双击 exe 没反应 / 闪退**：确认系统为 Windows x64；首次运行可能被 SmartScreen 拦截，点「更多信息 → 仍要运行」。
-- **浏览器打开 `index.html` 只看到海洋、没有启屏页**：`index.html` 依赖 Electron 的 preload 桥接；纯浏览器预览请用 `preview/full-playthrough.html`。
+- **浏览器打开 `index.html` 只看到海洋、没有启屏页**：`index.html` 依赖 Electron 的 preload 桥接；纯浏览器预览请用在线演示 https://muelsyse-520.github.io/workbuddy-splash/ （或本地双击 `preview/full-playthrough.html`）。
 - **想改动画**：入口是 `renderer/splash-html/index.html`，动画与转场全在里面。
 
 ## 许可
