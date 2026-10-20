@@ -26,7 +26,8 @@
 
 ![启屏页：荧光线稿 · 灵感有回响](docs/preview-landing.png)
 
-- **不装任何环境直接看**：打开 `preview/full-playthrough.html`，浏览器会自动完整播放。
+- **在线直接看（推荐）**：https://Muelsyse-520.github.io/workbuddy-splash/ —— 浏览器打开即自动完整播放，无需安装任何东西。
+- **本地看**：下载源码后双击 `preview/full-playthrough.html`。（注意：在 GitHub 网页里直接点开 `.html` 只会显示源码，不会播放，所以用上面的在线地址。）
 - **桌面版**：见下方「快速开始 / 便携版」。
 
 ## 快速开始（源码运行）
